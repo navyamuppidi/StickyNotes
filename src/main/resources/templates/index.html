@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th= "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Notes</title>
+
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/webjars/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="" th:href="@{/mystyle.css}" />
+</head>
+<body>
+
+<main>
+
+    <header>
+        <div class="container">
+            <div id="header">
+                <h1><i class="fas fa-sticky-note"></i> Sticky Notes</h1>
+                <button id="add_note">Add Note</button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div id="all_notes"></div>
+        </div>
+    </section>
+
+</main>
+
+
+<div id="modal">
+    <div id="inner_modal">
+        <textarea placeholder="Write a Note..." id="user_input" maxlength="160"></textarea>
+        <i class="far fa-times-circle" id="hide"></i>
+    </div>
+</div>
+
+
+  <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+  <script src="" th:src="@{/myjs.js}" ></script>
+</body>
+</html>
